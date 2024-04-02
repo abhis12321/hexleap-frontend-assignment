@@ -26,6 +26,28 @@ body.dark {
     background-color: rgba(46, 46, 54);
     color: white;
 }
+.navbar-container {
+    position: relative;
+}
+.navbar-container button {
+    position: absolute;
+    top: 10px;
+    right: 1rem;
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(51, 51, 1);
+    cursor: pointer;
+}
+.navbar-container button:hover {
+    color: rgb(195, 0, 255);
+}
+.navbar-container button:active {
+    color: white;
+    background-color: rgb(1, 1, 32);
+}
+
 h2.sports {
     cursor: pointer;
     display: inline-block;
@@ -135,7 +157,7 @@ body.dark .sport-card .sport-data {
 .see-more {
     background-color: rgb(4, 138, 201);
     padding: .7rem 1.7rem;
-    margin: 2rem auto;
+    margin: 3rem auto 1rem auto;
     border-radius: 4px;
     text-decoration: none;
     color: white;
@@ -151,7 +173,7 @@ body.dark .sport-card .sport-data {
     gap: 1rem;
     max-width: 1170px;
     padding: 4rem 7rem;
-    margin: 2rem auto;
+    margin: 1.52rem auto;
     position: relative;
 }
 body.dark .collection-spotlight-container {
