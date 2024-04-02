@@ -1,0 +1,12 @@
+body {
+    /* default styles for light mode */
+    background-color: white;
+    color: black;
+    min-height: 100vh;
+}
+
+body.dark {
+    /* styles for dark mode */
+    background-color: rgb(4, 0, 29);
+    color: white;
+}
