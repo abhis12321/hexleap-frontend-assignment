@@ -1,12 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.opacity-70 {
+    opacity: .7;
+}
+.opacity-80 {
+    opacity: .8;
+}
+.opacity-90 {
+    opacity: .9;
+}
+
 body {
     /* default styles for light mode */
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.856);
     color: black;
     min-height: 100vh;
 }
 
 body.dark {
     /* styles for dark mode */
-    background-color: rgb(4, 0, 29);
+    background-color: rgba(46, 46, 54);
+    color: white;
+}
+
+.sports-cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.sport-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    padding: 9px;
+    box-shadow: 0 0 5px rgb(51, 49, 53);
+    width: 220px;
+    height: 470px;
+    overflow: hidden;
+    gap: 15px;
+    font-family: sans-serif;
+}
+body.dark .sport-card {
+    background-color: rgb(63, 63, 69);
+}
+.sport-card .sport-image {
+    width: 100%;
+    /* height: 100%; */
+}
+.sport-card .sport-title {
+    font-weight: 400;
+    font-size: 1.17rem;
+}
+
+body.dark .sport-card .sport-data {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sport-card .sport-data {
+    display: flex;
+    align-items: center;
+    padding: .6rem;
+    gap: 1rem;
+    background-color: rgb(100, 103, 106 , .1);
+}
+
+.sport-card .sport-data .events-data {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.sport-card .sport-data .events-data .event-count-tag {
+    font-size: 11px;
+}
+.sport-card .sport-data .events-data .event-count {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.sport-card .sport-data .about-data {
+    /* background-color: blueviolet; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sport-card .sport-data .about-data .sport-name-tag {
+    font-size: 11px;
+}
+.sport-card .sport-data .about-data .sport-name {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* ADs */
+/* ADs */
+.ad-card {
+    padding-bottom: 2rem;
+}
+.ad-card .ad-description {
+    font-size: 12px;
+    color: rgb(124, 121, 121);
+}
+/* ADs */
+/* ADs */
+
+
+.see-more-cant {
+    display: flex;
+    /* align-items: center; */
+
+}
+.see-more {
+    background-color: rgb(4, 138, 201);
+    padding: .7rem 1.7rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    text-decoration: none;
     color: white;
 }
